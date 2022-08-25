@@ -9,7 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.apache.commons.codec.binary.Base64;
 
-public class DESPasswordEncoder extends org.springframework.security.crypto.scrypt.SCryptPasswordEncoder
+public class DESPasswordEncoder extends org.springframework.security.crypto.argon2.Argon2PasswordEncoder
   implements PasswordEncoder {
 
     private Cipher encryptCipher = null;
